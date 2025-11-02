@@ -69,5 +69,10 @@ namespace prySilvaMenendezAgendaContactos
             MessageBox.Show("Contacto Actualizado Correctamente","Exito",MessageBoxButtons.OK, MessageBoxIcon.Information);
             
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

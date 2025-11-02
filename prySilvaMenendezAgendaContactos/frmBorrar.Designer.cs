@@ -33,6 +33,8 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblOpcion3 = new System.Windows.Forms.Label();
             this.lblMensaje2 = new System.Windows.Forms.Label();
+            this.lstContactosBorrar = new System.Windows.Forms.ComboBox();
+            this.lblAEliminar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnVolver
@@ -56,12 +58,13 @@
             this.btnEliminar.TabIndex = 15;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblOpcion3
             // 
             this.lblOpcion3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOpcion3.ForeColor = System.Drawing.Color.Red;
-            this.lblOpcion3.Location = new System.Drawing.Point(211, 57);
+            this.lblOpcion3.Location = new System.Drawing.Point(232, 55);
             this.lblOpcion3.Name = "lblOpcion3";
             this.lblOpcion3.Size = new System.Drawing.Size(272, 34);
             this.lblOpcion3.TabIndex = 14;
@@ -77,20 +80,40 @@
             this.lblMensaje2.Text = "Usted Ha Seleccionado la Opcion de";
             this.lblMensaje2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lstContactosBorrar
+            // 
+            this.lstContactosBorrar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstContactosBorrar.FormattingEnabled = true;
+            this.lstContactosBorrar.Location = new System.Drawing.Point(401, 171);
+            this.lstContactosBorrar.Name = "lstContactosBorrar";
+            this.lstContactosBorrar.Size = new System.Drawing.Size(211, 28);
+            this.lstContactosBorrar.TabIndex = 17;
+            // 
+            // lblAEliminar
+            // 
+            this.lblAEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAEliminar.Location = new System.Drawing.Point(26, 171);
+            this.lblAEliminar.Name = "lblAEliminar";
+            this.lblAEliminar.Size = new System.Drawing.Size(341, 29);
+            this.lblAEliminar.TabIndex = 18;
+            this.lblAEliminar.Text = "Seleccione el Contacto a Elminar";
+            // 
             // frmBorrar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(668, 355);
+            this.Controls.Add(this.lblAEliminar);
+            this.Controls.Add(this.lstContactosBorrar);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.lblOpcion3);
             this.Controls.Add(this.lblMensaje2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBorrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Borrar Un Contacto";
+            this.Load += new System.EventHandler(this.frmBorrar_Load);
             this.ResumeLayout(false);
 
         }
@@ -101,5 +124,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label lblOpcion3;
         private System.Windows.Forms.Label lblMensaje2;
+        private System.Windows.Forms.ComboBox lstContactosBorrar;
+        private System.Windows.Forms.Label lblAEliminar;
     }
 }
