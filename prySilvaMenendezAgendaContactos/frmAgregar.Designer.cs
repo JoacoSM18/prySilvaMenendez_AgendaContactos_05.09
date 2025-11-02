@@ -47,7 +47,7 @@
             this.lblMensaje1.Location = new System.Drawing.Point(101, 9);
             this.lblMensaje1.Name = "lblMensaje1";
             this.lblMensaje1.Size = new System.Drawing.Size(504, 34);
-            this.lblMensaje1.TabIndex = 0;
+            this.lblMensaje1.TabIndex = 14;
             this.lblMensaje1.Text = "Usted Ha Seleccionado la Opcion de";
             this.lblMensaje1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -57,7 +57,7 @@
             this.lblNombre.Location = new System.Drawing.Point(45, 119);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(288, 37);
-            this.lblNombre.TabIndex = 2;
+            this.lblNombre.TabIndex = 12;
             this.lblNombre.Text = "Ingrese el Nombre del Nuevo Contacto";
             this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -67,7 +67,7 @@
             this.lblNumero.Location = new System.Drawing.Point(45, 176);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(292, 37);
-            this.lblNumero.TabIndex = 3;
+            this.lblNumero.TabIndex = 9;
             this.lblNumero.Text = "Ingrese el Numero del Nuevo Contacto";
             this.lblNumero.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblNumero.Click += new System.EventHandler(this.lblNumero_Click);
@@ -77,7 +77,7 @@
             this.txtNombre.Location = new System.Drawing.Point(427, 124);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(178, 26);
-            this.txtNombre.TabIndex = 1;
+            this.txtNombre.TabIndex = 0;
             // 
             // lblOpcion
             // 
@@ -86,7 +86,7 @@
             this.lblOpcion.Location = new System.Drawing.Point(243, 56);
             this.lblOpcion.Name = "lblOpcion";
             this.lblOpcion.Size = new System.Drawing.Size(264, 34);
-            this.lblOpcion.TabIndex = 5;
+            this.lblOpcion.TabIndex = 13;
             this.lblOpcion.Text = "Agregar Un Contacto";
             this.lblOpcion.Click += new System.EventHandler(this.lblOpcion_Click);
             // 
@@ -101,7 +101,7 @@
             this.lstCategoria.Location = new System.Drawing.Point(427, 240);
             this.lstCategoria.Name = "lstCategoria";
             this.lstCategoria.Size = new System.Drawing.Size(178, 28);
-            this.lstCategoria.TabIndex = 6;
+            this.lstCategoria.TabIndex = 2;
             // 
             // lblCategoria
             // 
@@ -119,7 +119,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(496, 296);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(138, 47);
-            this.btnAgregar.TabIndex = 8;
+            this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -130,7 +130,7 @@
             this.mskNumero.Mask = "000-000-0000";
             this.mskNumero.Name = "mskNumero";
             this.mskNumero.Size = new System.Drawing.Size(100, 26);
-            this.mskNumero.TabIndex = 9;
+            this.mskNumero.TabIndex = 1;
             this.mskNumero.Click += new System.EventHandler(this.mskNumero_Click);
             // 
             // btnVolver
@@ -140,7 +140,7 @@
             this.btnVolver.Location = new System.Drawing.Point(49, 296);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(117, 47);
-            this.btnVolver.TabIndex = 10;
+            this.btnVolver.TabIndex = 4;
             this.btnVolver.Text = "VOLVER";
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
@@ -164,6 +164,7 @@
             this.Name = "frmAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Un Contacto";
+            this.Load += new System.EventHandler(this.frmAgregar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
