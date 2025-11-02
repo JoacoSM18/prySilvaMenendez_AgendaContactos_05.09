@@ -47,7 +47,7 @@ namespace prySilvaMenendezAgendaContactos
             DialogResult Resultado = MessageBox.Show
             (
                 "¿Seguro que Desea Borrar Este Contacto?",
-                "Confirmar eliminación",
+                "Confirmar Eliminación",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning
             );
@@ -62,6 +62,11 @@ namespace prySilvaMenendezAgendaContactos
                 lstContactosBorrar.Items.RemoveAt(i); 
                 MessageBox.Show("Contacto Eliminado Correctamente","Exito",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

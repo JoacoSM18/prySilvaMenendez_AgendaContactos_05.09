@@ -138,6 +138,7 @@
             this.txtNuevoNombre.Name = "txtNuevoNombre";
             this.txtNuevoNombre.Size = new System.Drawing.Size(159, 26);
             this.txtNuevoNombre.TabIndex = 18;
+            this.txtNuevoNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNuevoNombre_KeyPress);
             // 
             // mskNuevoNumero
             // 

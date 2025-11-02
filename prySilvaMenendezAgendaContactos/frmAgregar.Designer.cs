@@ -75,9 +75,11 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(427, 124);
+            this.txtNombre.MaxLength = 30;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(178, 26);
             this.txtNombre.TabIndex = 0;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // lblOpcion
             // 

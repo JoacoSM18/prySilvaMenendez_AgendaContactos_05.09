@@ -74,5 +74,18 @@ namespace prySilvaMenendezAgendaContactos
         {
             this.Close();
         }
+
+        private void txtNuevoNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+        }
     }
 }

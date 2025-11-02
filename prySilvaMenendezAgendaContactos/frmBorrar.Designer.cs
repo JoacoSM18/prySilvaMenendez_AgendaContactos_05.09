@@ -41,18 +41,19 @@
             // 
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.Black;
-            this.btnVolver.Location = new System.Drawing.Point(45, 297);
+            this.btnVolver.Location = new System.Drawing.Point(17, 207);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(117, 47);
             this.btnVolver.TabIndex = 16;
             this.btnVolver.Text = "VOLVER";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Red;
-            this.btnEliminar.Location = new System.Drawing.Point(487, 297);
+            this.btnEliminar.Location = new System.Drawing.Point(365, 207);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(136, 47);
             this.btnEliminar.TabIndex = 15;
@@ -64,7 +65,7 @@
             // 
             this.lblOpcion3.Font = new System.Drawing.Font("Franklin Gothic Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOpcion3.ForeColor = System.Drawing.Color.Red;
-            this.lblOpcion3.Location = new System.Drawing.Point(232, 55);
+            this.lblOpcion3.Location = new System.Drawing.Point(126, 58);
             this.lblOpcion3.Name = "lblOpcion3";
             this.lblOpcion3.Size = new System.Drawing.Size(272, 34);
             this.lblOpcion3.TabIndex = 14;
@@ -73,7 +74,7 @@
             // lblMensaje2
             // 
             this.lblMensaje2.Font = new System.Drawing.Font("Franklin Gothic Medium", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensaje2.Location = new System.Drawing.Point(85, 10);
+            this.lblMensaje2.Location = new System.Drawing.Point(12, 9);
             this.lblMensaje2.Name = "lblMensaje2";
             this.lblMensaje2.Size = new System.Drawing.Size(504, 34);
             this.lblMensaje2.TabIndex = 13;
@@ -84,24 +85,24 @@
             // 
             this.lstContactosBorrar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstContactosBorrar.FormattingEnabled = true;
-            this.lstContactosBorrar.Location = new System.Drawing.Point(401, 171);
+            this.lstContactosBorrar.Location = new System.Drawing.Point(276, 130);
             this.lstContactosBorrar.Name = "lstContactosBorrar";
-            this.lstContactosBorrar.Size = new System.Drawing.Size(211, 28);
+            this.lstContactosBorrar.Size = new System.Drawing.Size(174, 28);
             this.lstContactosBorrar.TabIndex = 17;
             // 
             // lblAEliminar
             // 
-            this.lblAEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAEliminar.Location = new System.Drawing.Point(26, 171);
+            this.lblAEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAEliminar.Location = new System.Drawing.Point(12, 135);
             this.lblAEliminar.Name = "lblAEliminar";
-            this.lblAEliminar.Size = new System.Drawing.Size(341, 29);
+            this.lblAEliminar.Size = new System.Drawing.Size(247, 23);
             this.lblAEliminar.TabIndex = 18;
             this.lblAEliminar.Text = "Seleccione el Contacto a Elminar";
             // 
             // frmBorrar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(668, 355);
+            this.ClientSize = new System.Drawing.Size(513, 266);
             this.Controls.Add(this.lblAEliminar);
             this.Controls.Add(this.lstContactosBorrar);
             this.Controls.Add(this.btnVolver);
