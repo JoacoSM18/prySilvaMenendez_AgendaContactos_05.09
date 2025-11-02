@@ -16,5 +16,10 @@ namespace prySilvaMenendezAgendaContactos
         {
             InitializeComponent();
         }
+
+        private void frmEditar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

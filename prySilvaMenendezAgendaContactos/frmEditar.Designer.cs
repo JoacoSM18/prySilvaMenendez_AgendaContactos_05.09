@@ -39,7 +39,7 @@
             // 
             this.lblOpcion2.Font = new System.Drawing.Font("Franklin Gothic Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOpcion2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblOpcion2.Location = new System.Drawing.Point(232, 52);
+            this.lblOpcion2.Location = new System.Drawing.Point(246, 59);
             this.lblOpcion2.Name = "lblOpcion2";
             this.lblOpcion2.Size = new System.Drawing.Size(239, 34);
             this.lblOpcion2.TabIndex = 7;
@@ -69,12 +69,12 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEditar.Location = new System.Drawing.Point(490, 296);
+            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEditar.Location = new System.Drawing.Point(511, 296);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(138, 47);
+            this.btnEditar.Size = new System.Drawing.Size(110, 47);
             this.btnEditar.TabIndex = 11;
-            this.btnEditar.Text = "AGREGAR";
+            this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
             // frmEditar
@@ -90,6 +90,7 @@
             this.Name = "frmEditar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar Un Contacto";
+            this.Load += new System.EventHandler(this.frmEditar_Load);
             this.ResumeLayout(false);
 
         }
